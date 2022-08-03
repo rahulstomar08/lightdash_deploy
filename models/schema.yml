@@ -8,14 +8,3 @@ sources:
     tables:
             - name: CLAIMSDEC
 
-models:
-        - name: claims
-          columns:
-                - name: POLICY_NO 
-                  description: this is policy number
-
-                - name: PAR_NONPAR_ULIP_LEVELINCREASING
-                  description: parnonpar
-
-                - name:  DATE_OF_INTIMATION_HO
-                  description: initation date
