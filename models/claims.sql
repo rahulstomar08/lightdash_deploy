@@ -1,8 +1,4 @@
-with intimation_date_by_LOB as (
-
-
-
-    select
+select
 
      POLICY_NO as intimated_claims_count,
 
@@ -11,7 +7,3 @@ with intimation_date_by_LOB as (
      DATE_OF_INTIMATION_HO
 
      FROM {{ source("DB_01","CLAIMSDEC")}}
-
-)
-
-SELECT * from intimation_date_by_LOB
