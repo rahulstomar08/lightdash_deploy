@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+
+  - name: DB_01
+    database: DB_01
+    schema: PUBLIC
+    tables:
+            - name: CLAIMSDEC
