@@ -12,5 +12,4 @@ models:
         - name: claims
           columns:
                   - name: POLICY_NO
-                  - name: LOB
                   - name: DATE_OF_INTIMATION_HO
