@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+
+  - name: DB_01
+    database: DB_01
+    schema: PUBLIC
+    tables:
+            - name: CLAIMSDEC
+
+models:
+        - name: claims
+          columns:
+                  - name: POLICY_NO
+                  - name: LOB
+                  - name: DATE_OF_INTIMATION_HO
