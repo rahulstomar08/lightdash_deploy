@@ -8,3 +8,15 @@ sources:
     tables:
             - name: CLAIMSDEC
 
+
+# models:
+#    - name: claims
+#      columns:
+#               - name: POLICY_NO
+#                 discription: policy no
+
+#              - name: DATE_OF_INTIMATION_HO
+#                 discription: imitation date
+
+#              - name: PAR_NONPAR_ULIP_LEVELINCREASING
+#                discription: parnonpar
