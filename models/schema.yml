@@ -12,4 +12,5 @@ models:
         - name: claims
           columns:
                   - name: POLICY_NO
-                  - name: PAR_NONPAR_ULIP_LEVELINCREASING
+                  - name: LOB
+                  - name: DATE_OF_INTIMATION_HO
