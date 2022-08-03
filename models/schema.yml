@@ -7,3 +7,8 @@ sources:
     schema: PUBLIC
     tables:
             - name: CLAIMSDEC
+
+models:
+        - name: claims
+          columns:
+                  - name: POLICY_NO
