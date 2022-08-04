@@ -16,3 +16,4 @@ models:
                   - name: LOB
                   - name: Fiscal_year
                   - name: month_ho
+                  - name: CLAIM_AMOUNT
