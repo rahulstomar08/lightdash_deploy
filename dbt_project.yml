@@ -36,3 +36,5 @@ models:
     # Applies to all files under models/example/
     claims:
       materialized: table
+    sum_amt:
+      materialized: table
