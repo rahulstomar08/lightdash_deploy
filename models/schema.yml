@@ -7,6 +7,7 @@ sources:
     schema: PUBLIC
     tables:
             - name: CLAIMSDEC
+            - name: claims
 
 models:
         - name: claims
@@ -17,3 +18,4 @@ models:
                   - name: Fiscal_year
                   - name: month_ho
                   - name: CLAIM_AMOUNT
+                  - name: SNO
