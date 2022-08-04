@@ -16,6 +16,8 @@ models:
                   - name: DATE_OF_INTIMATION_HO
                   - name: LOB
                   - name: Fiscal_year
+                  
+        - name: sum_amt
+          columns:
                   - name: month_ho
-                  - name: CLAIM_AMOUNT
-                  - name: SNO
+                  - name: CLAIM_AMOUNTS
