@@ -14,3 +14,4 @@ models:
                   - name: POLICY_NO
                   - name: DATE_OF_INTIMATION_HO
                   - name: LOB
+                  - name: Fiscal_year
