@@ -1,9 +1,9 @@
 SELECT 
-     month_ho,
+     month_ho,month_name,
      ROUND(SUM(CLAIM_AMOUNT/10000000),1) AS CLAIM_AMOUNTS
 FROM {{ source("DB_01","claims")}}
 WHERE CLAIM_AMOUNT NOT LIKE '%-%'
-GROUP BY month_ho
+GROUP BY month_ho,month_name
 ORDER BY (case when month_ho = 1 then 1
                when month_ho = 2 then 2
                when month_ho = 3 then 3
