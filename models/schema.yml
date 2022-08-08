@@ -22,10 +22,11 @@ models:
                   - name: LOB
                   - name: Fiscal_year
                   - name: month_ho
-                    
-               
+                  - name: month_name
+                  
         - name: sum_amt
           columns:
                   - name: month_ho
                   - name: CLAIM_AMOUNTS
                   - name: Fiscal_year
+                  - name: month_name
