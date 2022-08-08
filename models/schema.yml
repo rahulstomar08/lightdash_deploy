@@ -27,7 +27,15 @@ models:
                           - MONTH
                           - QUARTER
                           - YEAR
-                  - name: REPUDIATION_DATE_SETTLEMENT_DATE
+                  - name: Settlement_Date
+                    meta:
+                      dimension:
+                        time_intervals:
+                          - DAY
+                          - WEEK
+                          - MONTH
+                          - QUARTER
+                          - YEAR
                   - name: LOB
                   - name: Fiscal_year
                   - name: month_ho
