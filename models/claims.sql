@@ -37,7 +37,8 @@ select
         WHEN month_sd = 12 then 'DEC'
         end) as month_name_sd,
         SNO,
-        CLAIM_AMOUNT
+        CLAIM_AMOUNT,
+        SERVICING_BRANCH_NAME
         
 
 FROM {{ source("DB_01","CLAIMSDEC")}}
