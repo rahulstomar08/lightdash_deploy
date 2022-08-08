@@ -14,10 +14,10 @@ models:
           columns:
                   - name: POLICY_NO
                   - name: DATE_OF_INTIMATION_HO
+                    -type: DATE
                   - name: LOB
                   - name: Fiscal_year
                   - name: month_ho
-                    -type: Date
                     
                   
 
@@ -27,4 +27,3 @@ models:
                   - name: month_ho
                   - name: CLAIM_AMOUNTS
                   - name: Fiscal_year
-                  - name: month_name
