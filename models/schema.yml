@@ -23,8 +23,10 @@ models:
                       dimension:
                         time_intervals:
                           - DAY
+                          - WEEK
                           - MONTH
                           - QUARTER
+                          - YEAR
                   - name: REPUDIATION_DATE_SETTLEMENT_DATE
                   - name: LOB
                   - name: Fiscal_year
