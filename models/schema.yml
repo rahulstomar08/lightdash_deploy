@@ -14,14 +14,12 @@ models:
           columns:
                   - name: POLICY_NO
                   - name: DATE_OF_INTIMATION_HO
-                    -type: DATE
+                    -type: timestamp
                   - name: LOB
                   - name: Fiscal_year
                   - name: month_ho
                     
-                  
-
-                  
+               
         - name: sum_amt
           columns:
                   - name: month_ho
