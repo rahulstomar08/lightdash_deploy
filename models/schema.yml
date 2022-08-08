@@ -17,9 +17,8 @@ models:
                     meta:
                       metrics:
                         month_name:
-                          sql: DATE_OF_INTIMATION_HO
                           type: date
-                          
+                          sql: "max(${DATE_OF_INTIMATION_HO})"
 
                   - name: LOB
                   - name: Fiscal_year
