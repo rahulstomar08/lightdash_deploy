@@ -16,8 +16,9 @@ models:
                   - name: DATE_OF_INTIMATION_HO
                     meta:
                       metrics:
-                        month_no:
+                        month_name:
                           type: date
+                          sql: extract (month from DATE_OF_INTIMATION_HO)
 
                   - name: LOB
                   - name: Fiscal_year
