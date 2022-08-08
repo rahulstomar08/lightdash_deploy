@@ -27,3 +27,4 @@ select
 
 FROM {{ source("DB_01","CLAIMSDEC")}}
 WHERE CLAIM_AMOUNT NOT LIKE '%-%'
+ORDER BY month_ho
