@@ -38,7 +38,8 @@ select
         end) as month_name_sd,
         SNO,
         CLAIM_AMOUNT,
-        SERVICING_BRANCH_NAME
+        SERVICING_BRANCH_NAME,
+        CHANNEL1
         
 
 FROM {{ source("DB_01","CLAIMSDEC")}}
