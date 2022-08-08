@@ -23,12 +23,12 @@ models:
                   - name: Fiscal_year
                   - name: month_ho
                   - name: month_name
-                  - name: CLAIM_AMOUNTS
+                  - name: CLAIM_AMOUNT
                     meta:
                       metrics:
                         claim_amount_sum:
                           type: sum
-                          sql: CLAIM_AMOUNTS
+                          sql: CLAIM_AMOUNT
 
                   
         - name: sum_amt

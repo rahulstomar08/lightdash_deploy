@@ -22,6 +22,8 @@ select
         WHEN month_ho = 12 then 'DEC'
         end) as month_name,
         SNO,
-    CLAIM_AMOUNT
+        CLAIM_AMOUNT
+        
 
 FROM {{ source("DB_01","CLAIMSDEC")}}
+WHERE CLAIM_AMOUNT NOT LIKE '%-%'
