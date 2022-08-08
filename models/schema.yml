@@ -17,7 +17,6 @@ models:
                     meta:
                       metrics:
                         month_no:
-                          type: date
 
                   - name: LOB
                   - name: Fiscal_year
