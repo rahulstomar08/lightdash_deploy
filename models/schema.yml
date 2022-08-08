@@ -19,6 +19,12 @@ models:
                           type: count_distinct
                           sql: POLICY_NO
                   - name: DATE_OF_INTIMATION_HO
+                    meta:
+                      dimension:
+                        time_intervals:
+                          - DAY
+                          - MONTH
+                          - QUARTER
                   - name: REPUDIATION_DATE_SETTLEMENT_DATE
                   - name: LOB
                   - name: Fiscal_year
