@@ -53,4 +53,5 @@ models:
                   - name: CHANNEL1
                   - name: EARLYNON_EARLY
                   - name: WRITING_AGENT_STATE_NAME
+                  - name: NATURE_OF_BASE_POLICY
                   
