@@ -55,6 +55,10 @@ models:
                   - name: NATURE_OF_BASE_POLICY
 
         - name: claims1
+          meta:
+            joins:
+              - join: claims
+                sql_on: ${claims.Fiscal_year} = ${claims1.Fiscal_year}
 
           columns:
                   - name: POLICY_NO
