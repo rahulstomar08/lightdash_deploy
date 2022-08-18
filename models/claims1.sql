@@ -5,3 +5,4 @@ select
     CLAIM_AMOUNT
     
 FROM {{ source("DB_01","CLAIMSDEC")}}
+WHERE CLAIM_AMOUNT NOT LIKE '%-%'
