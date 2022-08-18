@@ -54,4 +54,21 @@ models:
                   - name: EARLYNON_EARLY
                   - name: WRITING_AGENT_STATE_NAME
                   - name: NATURE_OF_BASE_POLICY
-                  
+
+models:
+  - name: claims1
+    meta:
+      joins:
+        - join: claims
+          sql_on: ${claims.Intimation_Date} = ${claims1.Settlement_Date}
+
+    columns:
+      - name: Settlement_Date
+        meta:
+          dimension:
+            time_intervals:
+              - DAY
+              - WEEK
+              - MONTH
+              - QUARTER
+              - YEAR
