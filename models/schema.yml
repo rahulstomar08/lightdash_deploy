@@ -13,11 +13,6 @@ models:
         - name: claims
           columns:
                   - name: POLICY_NO
-                    meta:
-                      metrics:
-                        policy_no_count:
-                          type: count_distinct
-                          sql: POLICY_NO
                   - name: Intimation_Date
                     meta:
                       dimension:
@@ -49,7 +44,7 @@ models:
                           type: sum
                           sql: CLAIM_AMOUNT/10000000
                           format: 'inr'
-                        claim_amount_count:
+                        claim_count:
                           type: count_distinct
                           sql: CLAIM_AMOUNT
                   - name: SERVICING_BRANCH_NAME
