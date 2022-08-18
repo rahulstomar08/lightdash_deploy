@@ -58,7 +58,7 @@ models:
           meta:
             joins:
               - join: claims
-                sql_on: ${claims1.Settlement_Date} = ${claims.Intimation_Date}
+                sql_on: ${claims.POLICY_NO} = ${claims1.POLICY_NO}
 
           columns:
                   - name: POLICY_NO
