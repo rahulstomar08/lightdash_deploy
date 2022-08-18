@@ -55,6 +55,11 @@ models:
                   - name: NATURE_OF_BASE_POLICY
 
         - name: claims1
+          meta:
+            joins:
+              - join: claims
+                sql_on: ${claims1.Settlement_Date} = ${claims.Intimation_Date}
+
           columns:
                   - name: POLICY_NO
                     meta:
