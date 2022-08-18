@@ -55,15 +55,20 @@ models:
                   - name: NATURE_OF_BASE_POLICY
 
 models:
-  - name: claims1
-
-    columns:
-      - name: Settlement_Date
-        meta:
-          dimension:
-            time_intervals:
-              - DAY
-              - WEEK
-              - MONTH
-              - QUARTER
-              - YEAR
+        - name: claims1
+          columns:
+                  - name: POLICY_NO
+                    meta:
+                      metrics:
+                        claim_count:
+                          type: count
+                          sql: POLICY_NO
+                  - name: Intimation_Date
+                    meta:
+                      dimension:
+                        time_intervals:
+                          - DAY
+                          - WEEK
+                          - MONTH
+                          - QUARTER
+                          - YEAR
