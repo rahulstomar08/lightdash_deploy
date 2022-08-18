@@ -16,7 +16,7 @@ models:
                     meta:
                       metrics:
                         policy_no_count:
-                          type: count_distinct
+                          type: count
                           sql: POLICY_NO
                   - name: Intimation_Date
                     meta:
