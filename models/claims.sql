@@ -1,4 +1,6 @@
 select 
+
+    POLICY_NO,
     UPPER(PAR_NONPAR_ULIP_LEVELINCREASING) as LOB,
     TRY_TO_DATE(DATE_OF_INTIMATION_HO::VARCHAR,'dd-mm-yyyy') as Intimation_Date,
     TRY_TO_DATE(REPUDIATION_DATE_SETTLEMENT_DATE::VARCHAR,'dd-mm-yyyy') as Settlement_Date,
