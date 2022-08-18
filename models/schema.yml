@@ -54,3 +54,21 @@ models:
                   - name: WRITING_AGENT_STATE_NAME
                   - name: NATURE_OF_BASE_POLICY
 
+        - name: claims1
+          columns:
+                  - name: POLICY_NO
+                    meta:
+                      metrics:
+                        claim_count:
+                          type: count
+                          sql: POLICY_NO
+                  - name: Intimation_Date
+                    meta:
+                      dimension:
+                        time_intervals:
+                          - DAY
+                          - WEEK
+                          - MONTH
+                          - QUARTER
+                          - YEAR
+
