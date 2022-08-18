@@ -62,7 +62,7 @@ models:
                         claim_count:
                           type: count
                           sql: POLICY_NO
-                  - name: Intimation_Date
+                  - name: Settlement_Date
                     meta:
                       dimension:
                         time_intervals:
