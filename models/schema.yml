@@ -63,6 +63,7 @@ models:
                           - MONTH
                           - QUARTER
                           - YEAR
+                  - name: A
 
         - name: claims1
           # meta:
