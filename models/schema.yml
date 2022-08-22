@@ -54,7 +54,7 @@ models:
                   - name: EARLYNON_EARLY
                   - name: WRITING_AGENT_STATE_NAME
                   - name: NATURE_OF_BASE_POLICY
-                  - name: Previous_Year
+                  - name: Previous_Year_same_month
                     meta:
                       dimension:
                         time_intervals:
