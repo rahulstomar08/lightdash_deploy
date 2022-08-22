@@ -55,6 +55,14 @@ models:
                   - name: WRITING_AGENT_STATE_NAME
                   - name: NATURE_OF_BASE_POLICY
                   - name: Previous_Year
+                    meta:
+                      dimension:
+                        time_intervals:
+                          - DAY
+                          - WEEK
+                          - MONTH
+                          - QUARTER
+                          - YEAR
 
         - name: claims1
           # meta:
