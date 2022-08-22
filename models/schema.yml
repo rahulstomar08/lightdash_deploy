@@ -54,6 +54,7 @@ models:
                   - name: EARLYNON_EARLY
                   - name: WRITING_AGENT_STATE_NAME
                   - name: NATURE_OF_BASE_POLICY
+                  - name: Previous_Year
 
         - name: claims1
           # meta:
