@@ -22,6 +22,7 @@ select
     
 FROM {{ source("DB_01","CLAIMSDEC")}}
 WHERE CLAIM_AMOUNT NOT LIKE '%-%'
+order by Intimation_Date
 
 
 
