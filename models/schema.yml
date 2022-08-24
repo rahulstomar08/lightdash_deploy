@@ -38,10 +38,6 @@ models:
                           - YEAR
                   - name: LOB
                   - name: Fiscal_year
-                  - name: month_ho
-                  - name: month_sd
-                  - name: month_name
-                  - name: month_name_sd
                   - name: CLAIM_AMOUNT
                     meta:
                       metrics:
