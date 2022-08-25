@@ -67,10 +67,10 @@ models:
                   - name: Claim_Last_Year
 
         - name: claims1
-          meta:
-            joins:
-              - join: claims
-                sql_on: 
+          # meta:
+          #   joins:
+          #     - join: claims
+          #       sql_on: 
 
 
           columns:
