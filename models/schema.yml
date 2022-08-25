@@ -7,12 +7,12 @@ sources:
     schema: PUBLIC
     tables:
             - name: CLAIMSDEC
-            - name: claims
 
 models:
         - name: claims
           columns:
                   - name: POLICY_NO
+                    label: "Policy Number"
                     meta:
                       metrics:
                         claim_count:
@@ -67,11 +67,10 @@ models:
                   - name: Claim_Last_Year
 
         - name: claims1
-          # meta:
-          #   joins:
-          #     - join: claims
-          #       sql_on: ${claims.Fiscal_year} = ${claims1.Fiscal_year} AND ${claims.CHANNEL1} = ${claims1.CHANNEL1} AND
-          #               ${claims.EARLYNON_EARLY} = ${claims1.EARLYNON_EARLY} AND ${claims.LOB} = ${claims1.LOB}
+          meta:
+            joins:
+              - join: claims
+                sql_on: 
 
 
           columns:
