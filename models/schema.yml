@@ -95,14 +95,7 @@ models:
                           format: 'inr'
                   - name: Fiscal_year
                   - name: CHANNEL1
-                    meta:
-                      dimension:
-                        type: string
-                        label: 'Channel'
                   - name: EARLYNON_EARLY
-                    meta:
-                      dimension:
-                        label: 'Early/Non Early'
                   - name: WRITING_AGENT_STATE_NAME
                   - name: LOB
 
