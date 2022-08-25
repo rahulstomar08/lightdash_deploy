@@ -12,7 +12,7 @@ models:
         - name: claims
           columns:
                   - name: POLICY_NO
-                    label: "Policy Number"
+                    label: 'Policy Number'
                     meta:
                       metrics:
                         claim_count:
