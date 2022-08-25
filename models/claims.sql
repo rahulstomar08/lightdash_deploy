@@ -1,5 +1,4 @@
-with final as ( 
-    SELECT
+SELECT
     POLICY_NO,
     UPPER(PAR_NONPAR_ULIP_LEVELINCREASING) as LOB,
     TRY_TO_DATE(DATE_OF_INTIMATION_HO::VARCHAR,'dd-mm-yyyy') as Intimation_Date,
@@ -15,24 +14,8 @@ with final as (
     EARLYNON_EARLY,
     WRITING_AGENT_STATE_NAME,
     NATURE_OF_BASE_POLICY
-    
-    FROM {{ source("DB_01","CLAIMSDEC")}}
-    WHERE CLAIM_AMOUNT NOT LIKE '%-%'
-
-)
-
-select *,
-LAG (SUM(CLAIM_AMOUNT)/10000000) OVER (ORDER BY Fiscal_year) AS Claim_Last_Year
-FROM final
-GROUP BY POLICY_NO,LOB,Intimation_Date,Settlement_Date,Fiscal_year, SNO,
-    CLAIM_AMOUNT,
-    SERVICING_BRANCH_NAME,
-    CHANNEL1,
-    EARLYNON_EARLY,
-    WRITING_AGENT_STATE_NAME,
-    NATURE_OF_BASE_POLICY
-
-
+FROM {{ source("DB_01","CLAIMSDEC")}}
+WHERE CLAIM_AMOUNT NOT LIKE '%-%'
 
 
 
