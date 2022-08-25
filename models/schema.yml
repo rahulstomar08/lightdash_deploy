@@ -97,6 +97,7 @@ models:
                   - name: CHANNEL1
                     meta:
                       dimension:
+                        type: string
                         label: 'Channel'
                   - name: EARLYNON_EARLY
                     meta:
