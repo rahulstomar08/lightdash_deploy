@@ -12,12 +12,12 @@ models:
         - name: claims
           columns:
                   - name: POLICY_NO
-                    label: 'Policy Number'
                     meta:
                       metrics:
                         claim_count:
                           type: count
                           sql: POLICY_NO
+                          label: 'Policy Number'
                   - name: Intimation_Date
                     meta:
                       dimension:
