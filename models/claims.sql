@@ -23,7 +23,7 @@ with final as (
 )
 
 select *,
-LAG (SUM(CLAIM_AMOUNT),1) OVER (ORDER BY YEAR(Intimation_Date)) AS Claim_Last_Year
+LAG (SUM(CLAIM_AMOUNT)/10000000) OVER (ORDER BY YEAR(Intimation_Date)) AS Claim_Last_Year
 FROM final
 GROUP BY POLICY_NO,LOB,Intimation_Date,Previous_Year_same_month,Settlement_Date,Fiscal_year, SNO,
     CLAIM_AMOUNT,
