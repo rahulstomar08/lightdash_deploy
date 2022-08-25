@@ -64,6 +64,7 @@ models:
                           - MONTH
                           - QUARTER
                           - YEAR
+                  - name: Claim_Last_Year
 
         - name: claims1
           # meta:
