@@ -1,21 +1,16 @@
 SELECT
-    POLICY_NO,
-    UPPER(PAR_NONPAR_ULIP_LEVELINCREASING) as LOB,
-    TRY_TO_DATE(DATE_OF_INTIMATION_HO::VARCHAR,'dd-mm-yyyy') as Intimation_Date,
-    TRY_TO_DATE(REPUDIATION_DATE_SETTLEMENT_DATE::VARCHAR,'dd-mm-yyyy') as Settlement_Date,
-    (CASE WHEN EXTRACT(MONTH from to_date(DATE_OF_INTIMATION_HO,'dd-mm-yyyy'))<4
-    THEN CONCAT('FY', cast(EXTRACT(YEAR from to_date(DATE_OF_INTIMATION_HO,'dd-mm-yyyy')) as TEXT))
-    WHEN EXTRACT(MONTH from to_date(DATE_OF_INTIMATION_HO,'dd-mm-yyyy'))>=4
-    THEN CONCAT('FY', cast(EXTRACT(YEAR from to_date(DATE_OF_INTIMATION_HO,'dd-mm-yyyy'))+1 as TEXT)) END )AS Fiscal_year,
-    SNO,
-    CLAIM_AMOUNT,
-    SERVICING_BRANCH_NAME,
-    CHANNEL1,
-    EARLYNON_EARLY,
-    WRITING_AGENT_STATE_NAME,
-    NATURE_OF_BASE_POLICY
+    "Policy No",
+    UPPER("PAR / Non-Par / ULIP - Level/Increasing") as LOB,
+    "S.No",
+    "Claim Amount  (BASE + RIDER)",
+    "Servicing Branch Name",
+    "Channel-1",
+    "Early/Non Early",
+    "Writing Agent State Name",
+    "Nature of Base Policy"
 FROM {{ source("DB_01","CLAIMSDEC")}}
-WHERE CLAIM_AMOUNT NOT LIKE '%-%'
+WHERE "Claim Amount  (BASE + RIDER)" NOT LIKE '%-%'
+
 
 
 
